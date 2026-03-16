@@ -3,30 +3,20 @@ margin:0;
 font-family:'Orbitron', sans-serif;
 color:white;
 background:black;
-overflow-x:hidden;
 }
 
 
-
-/* FULLSCREEN VIDEO BACKGROUND */
+/* VIDEO BACKGROUND */
 
 .bg-video{
-
 position:fixed;
-
 top:0;
 left:0;
-
-min-width:100%;
-min-height:100%;
-
-width:auto;
-height:auto;
-
+width:100%;
+height:100%;
 object-fit:cover;
-
-z-index:-100;
-
+z-index:-1;
+filter:brightness(0.35);
 }
 
 
@@ -34,54 +24,30 @@ z-index:-100;
 /* NAVBAR */
 
 .navbar{
-
 position:fixed;
-
 top:0;
 left:0;
-
 width:100%;
-
-padding:25px 60px;
-
+padding:20px 60px;
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 z-index:10;
-
 }
-
-
 
 .logo{
-
 font-size:22px;
-
 font-weight:800;
-
 letter-spacing:2px;
-
 }
 
-
-
 .install-btn{
-
 background:#ff0077;
-
 padding:12px 22px;
-
 border-radius:8px;
-
 text-decoration:none;
-
 color:white;
-
 font-weight:600;
-
 }
 
 
@@ -89,63 +55,100 @@ font-weight:600;
 /* HERO */
 
 .hero{
-
 height:100vh;
-
 display:flex;
-
 flex-direction:column;
-
 justify-content:center;
-
 align-items:center;
-
 text-align:center;
-
 padding:0 20px;
-
 }
-
-
 
 .hero h1{
-
-font-size:72px;
-
-line-height:1.2;
-
-margin-bottom:25px;
-
+font-size:70px;
+margin-bottom:20px;
 }
-
-
 
 .hero p{
-
-font-size:18px;
-
+margin-bottom:30px;
 opacity:0.9;
+}
 
-margin-bottom:35px;
-
+.play-btn{
+background:#00eaff;
+padding:18px 40px;
+border-radius:10px;
+text-decoration:none;
+color:black;
+font-weight:700;
 }
 
 
 
-.play-btn{
+/* FEATURES */
 
-background:#00eaff;
+.features{
+padding:120px 10%;
+text-align:center;
+background:rgba(0,0,30,0.6);
+backdrop-filter:blur(6px);
+}
 
-padding:18px 40px;
+.features h2{
+font-size:40px;
+margin-bottom:60px;
+}
 
+.features-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:40px;
+}
+
+.feature-card{
+background:#0c0c25;
+padding:35px;
+border-radius:12px;
+transition:transform 0.2s;
+}
+
+.feature-card:hover{
+transform:scale(1.05);
+}
+
+
+
+/* SCREENSHOTS */
+
+.screenshots{
+padding:120px 10%;
+text-align:center;
+}
+
+.screenshots h2{
+font-size:40px;
+margin-bottom:50px;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.gallery img{
+width:320px;
 border-radius:10px;
+}
 
-text-decoration:none;
 
-color:black;
 
-font-weight:700;
+/* FOOTER */
 
-font-size:18px;
-
+footer{
+padding:60px;
+text-align:center;
+background:#000;
+opacity:0.8;
 }
