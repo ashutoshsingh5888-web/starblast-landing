@@ -29,6 +29,58 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+box-sizing:border-box;
+z-index:100;
+}
+
+.logo a{
+color:white;
+font-size:22px;
+font-weight:800;
+letter-spacing:2px;
+text-decoration:none;
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:30px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-size:14px;
+opacity:0.9;
+}
+
+.nav-links a:hover{
+opacity:1;
+}
+
+.install-btn{
+background:#ff0077;
+color:white;
+padding:12px 24px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:0.2s;
+}
+
+.install-btn:hover{
+background:#ff2f8f;
+}
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
 
 display:flex;
 justify-content:space-between;
