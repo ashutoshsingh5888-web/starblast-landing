@@ -27,11 +27,15 @@ filter:brightness(0.35);
 position:fixed;
 top:0;
 left:0;
-width:100%;
-padding:20px 60px;
+right:0;
+height:70px;
+
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+
+padding:0 60px;
+
 z-index:10;
 }
 
@@ -39,17 +43,22 @@ z-index:10;
 font-size:22px;
 font-weight:800;
 letter-spacing:2px;
+color:white;
 }
 
 .install-btn{
 background:#ff0077;
-padding:12px 22px;
+color:white;
+padding:12px 24px;
 border-radius:8px;
 text-decoration:none;
-color:white;
 font-weight:600;
+transition:0.2s;
 }
 
+.install-btn:hover{
+background:#ff2f8f;
+}
 
 
 /* HERO */
@@ -61,7 +70,7 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:0 20px;
+padding-top:70px;
 }
 
 .hero h1{
