@@ -41,6 +41,23 @@ box-sizing:border-box;
 z-index:10;
 }
 
+.nav-links{
+display:flex;
+gap:30px;
+align-items:center;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-size:14px;
+opacity:0.9;
+}
+
+.nav-links a:hover{
+opacity:1;
+}
+
 .logo{
 font-size:22px;
 font-weight:800;
