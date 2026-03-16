@@ -21,7 +21,6 @@ filter:brightness(0.35);
 }
 
 
-
 /* NAVBAR */
 
 .navbar{
@@ -76,61 +75,6 @@ transition:0.2s;
 background:#ff2f8f;
 }
 
-.navbar{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:20px 40px;
-
-box-sizing:border-box;
-
-z-index:10;
-}
-
-.nav-links{
-display:flex;
-gap:30px;
-align-items:center;
-}
-
-.nav-links a{
-color:white;
-text-decoration:none;
-font-size:14px;
-opacity:0.9;
-}
-
-.nav-links a:hover{
-opacity:1;
-}
-
-.logo{
-font-size:22px;
-font-weight:800;
-letter-spacing:2px;
-color:white;
-}
-
-.install-btn{
-background:#ff0077;
-color:white;
-padding:12px 24px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-transition:0.2s;
-}
-
-.install-btn:hover{
-background:#ff2f8f;
-}
-
 
 /* HERO */
 
@@ -162,7 +106,6 @@ text-decoration:none;
 color:black;
 font-weight:700;
 }
-
 
 
 /* FEATURES */
@@ -197,7 +140,6 @@ transform:scale(1.05);
 }
 
 
-
 /* SCREENSHOTS */
 
 .screenshots{
@@ -223,7 +165,6 @@ border-radius:10px;
 }
 
 
-
 /* FOOTER */
 
 footer{
@@ -231,4 +172,14 @@ padding:60px;
 text-align:center;
 background:#000;
 opacity:0.8;
+}
+
+
+/* PAGE CONTENT (about/blog/privacy) */
+
+.page{
+max-width:900px;
+margin:120px auto;
+padding:20px;
+line-height:1.7;
 }
